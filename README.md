@@ -5,14 +5,11 @@ Repo to host a creative poetry generation project implementation for the Summer 
   ### Collection of dream data
   To collect the dream data from _DreamBank.net_ that we used in our project run the .py files from the CL as follows:
     
-   ##### Extract dreams from the **DreamBank**
    ```
    python2 dream_extractor.py
    ```
    *Currently, this project requires using Python2 for the dream_extractor.py script*
-
-
-   ##### Convert json objects into a .txt file
+   
    ```
    python3 dreamjson_to_text.py
    ```
@@ -21,7 +18,6 @@ Repo to host a creative poetry generation project implementation for the Summer 
   ### Creation of EmoLex Python dictionary
   To create a python version of the EmoLex dictionary file run the .py file from the CL as follows:
 
-   ##### Create EmoLex dictionary
    ```
    python3 emolex_to_dict.py
    ```
