@@ -1,0 +1,15 @@
+regex
+requests
+tqdm
+numpy
+toposort
+nltk
+beautifulsoup4
+pickle
+inspect
+operator
+gzip
+json
+re
+os
+pandas
