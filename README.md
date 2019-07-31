@@ -14,6 +14,6 @@ To collect the dream data from _DreamBank.net_ that we used in our project run t
 
   2. Convert json objects into a .txt file
   ```
-  python3 dreamjson_to_text
+  python3 dreamjson_to_text.py
   ```
 These python scripts will create the directory structure necessary to scrape and create .txt files in the directory you are currently in.
