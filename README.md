@@ -21,6 +21,7 @@ Repo to host a creative poetry generation project implementation for the Summer 
    ```
    python3 emolex_to_dict.py
    ```
+   A .pkl file is save in the "/pickles" directory for later use
    
    #### Collection of GutenBerg Corpus
    The original version of this project makes use of the GutenTag tool to collect a corpus, but for quick and easy replication we recommended making use of Allison Parrish's gutenberg-poetry-corpus at https://github.com/aparrish/gutenberg-poetry-corpus.
