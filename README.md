@@ -42,5 +42,5 @@ Repo to host a creative poetry generation project implementation for the Summer 
    
    After downloading the data run the following .py file to create a .pkl list of the books:
    ```
-   python3 guten_to_books.py
+   python3 gutentext_to_books.py
    ```
