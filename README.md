@@ -21,19 +21,21 @@ Repo to host a creative poetry generation project implementation for the Summer 
   
   http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm 
   
-  Next place the zipped folder in the "emo_lex" dictionary
+  Next place the zipped EmoLex folder in the project directory.
   
-  To unzip the folder and create a python dictionary of the EmoLex file run the .py file from the CL as follows:
+  The following .py file will create an emo_lex directory, unzip the folder, and create the emolex dictionary. 
+  
+  Run it from the CL as follows:
 
    ```
    python3 emolex_to_dict.py
    ```
-   A .pkl file is save in the "/pickles" directory for later use
+   A .pkl file is saved in the "/pickles" directory for later use
    
    #### Collection of GutenBerg Corpus
    The original version of this project makes use of the GutenTag tool to collect a corpus, but for quick and easy replication we recommended making use of Allison Parrish's gutenberg-poetry-corpus at https://github.com/aparrish/gutenberg-poetry-corpus.
    
    This corpus has been filtered based on some heuristics (see GitHub page) and contains (mostly) only-English text.
    
-   Download the Corpus here:
+   Place the zipped json folder in the project directory after downloading from here:
    http://static.decontextualize.com/gutenberg-poetry-v001.ndjson.gz
