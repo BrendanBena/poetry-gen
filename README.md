@@ -1,7 +1,7 @@
 # Creative Poetry Generation
 Repo to host a creative poetry generation project implementation for the Summer 2019 UCCS REU in Machine Learning for Natural Language Processing.
 
-## Data Preparation
+## Data Collection & Preparation
   #### Collection of dream data
   To collect the dream data from _DreamBank.net_ that we used in our project run the .py files from the CL as follows:
     
@@ -44,3 +44,8 @@ Repo to host a creative poetry generation project implementation for the Summer 
    ```
    python3 gutentext_to_books.py
    ```
+  
+  #### Poem Emotion Scoring
+  The following script contains a 'scored_text' class that ranks a text based on the number of EmoLex words found in it. 
+  
+  Thats it! You know should have all data necessary to rerun our experiment.
