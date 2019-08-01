@@ -10,12 +10,23 @@
 import pandas as pd
 import os
 import pickle
+import zipfile
 
+        
 # Function that will create the necessary directory structure
 def dir_constructor():
     
     if os.path.exists('pickles/') == False:
         os.mkdir('pickles/')
+
+    if os.path.exists('emo_lex/') == False:
+        os.mkdir('emo_lex/')
+
+
+# Function to unzip downloaded EmoLex folder and 
+def unzipper():
+    with zipfile.ZipFile('NRC-Emotion-Lexicon.zip', 'r') as zip:
+        zip.extractall('emo_lex/NRC-Emotion-Lexicon')
 
 
 # Function to save a pickle file
@@ -29,12 +40,14 @@ def emolex_to_dict():
 
     # Path for files
     path = 'pickles/'
+    openpath = 'emo_lex/NRC-Emotion-Lexicon/NRC-Emotion-Lexicon-v0.92/'
+    emo_lex = 'NRC-Emotion-Lexicon-Wordlevel-v0.92.txt'
 
     # Initialize dictionary list
     dictlist = []
                     
     # Read tsv file into Pandas dataframe object
-    data = pd.read_csv("emo_lex/emolex.txt", sep='\t', names=['word', 'emotion', 'score'], header=None)
+    data = pd.read_csv(openpath+emo_lex, sep='\t', names=['word', 'emotion', 'score'], header=None)
 
     # Loop through every 10th line and gather all necessary emotion words
     #  create dictionaries out of all words in emolex
@@ -63,7 +76,9 @@ def emolex_to_dict():
 if __name__ == '__main__':
 
     dir_constructor()
-    print('Create EmoLex dictionary')
+    unzipper()
+    print('EmoLex unzipped')
+    print('Creating EmoLex dictionary')
     emolex_dict = emolex_to_dict()
     # Save the pickle!
     picklelist(emolex_dict, 'dictlist')
