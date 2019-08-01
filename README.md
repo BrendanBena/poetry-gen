@@ -16,7 +16,14 @@ Repo to host a creative poetry generation project implementation for the Summer 
    These python scripts will create the directory structure necessary to scrape and create .txt files in the directory you are    currently in.
 
   #### Creation of EmoLex Python dictionary
-  To create a python version of the EmoLex dictionary file run the .py file from the CL as follows:
+  
+  Begin by downloading the "Non-Commercial Research Use" version of EmoLex from the lexicon home here:
+  
+  http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm 
+  
+  Next place the zipped folder in the "emo_lex" dictionary
+  
+  To unzip the folder and create a python dictionary of the EmoLex file run the .py file from the CL as follows:
 
    ```
    python3 emolex_to_dict.py
