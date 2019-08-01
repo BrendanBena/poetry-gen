@@ -39,3 +39,8 @@ Repo to host a creative poetry generation project implementation for the Summer 
    
    Place the zipped json folder in the project directory after downloading from here:
    http://static.decontextualize.com/gutenberg-poetry-v001.ndjson.gz
+   
+   After downloading the data run the following .py file to create a .pkl list of the books:
+   ```
+   python3 guten_to_books.py
+   ```
