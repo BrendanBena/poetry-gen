@@ -49,10 +49,11 @@ def guten_to_books():
     #   pull string value from dictionary
     #       create string of entire book
     for gid, groups in poems_grouped:
+        gid_for_list = gid     
         book_string = ''
         for group in groups:
             book_string += group['s'] + ' '
-        book_list.append(book_string)
+        book_list.append((book_string,gid))
 
     return book_list
 
