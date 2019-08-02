@@ -1,6 +1,8 @@
 # Creative Poetry Generation
 Repo to host a creative poetry generation project implementation for the Summer 2019 UCCS REU in Machine Learning for Natural Language Processing.
 
+This repo shows how to completely reproduce my UCCS REU in ML for NLP research project. The project involves taking a state of the art language model, OpenAI's GPT-2 (a Transformer Neural Network architecture), and finetuning the model on various sets of data, then using that model for text generation. We explore different forms of influencing natural language generation with things such as emotion-infused and dream text.
+
 ## Data Collection & Preparation
 The following section outlines the necessary steps to complete the initial data collection and pre-processing of our project.
 
@@ -67,4 +69,13 @@ The following section outlines the necessary steps to complete the initial data 
   
   Thats it! You know should have all data necessary to rerun our experiment.
 
-## Re-Training
+## Re-Training GPT-2
+  This sections outlines how to finetune our preprocessed data using Google Colab and the gpt-2-simple Python package.
+  
+  Start by uploading your .txt files to the main directory of your Gooogle Drive. 
+  
+  Next make a copy of the Colab we make use of here: 
+  https://colab.research.google.com/drive/1zaZOYw0a3uYx09J-GdtS-9TSC44_ONSv
+  
+  The Colab will give you directions to complete the experiments.
+ 
