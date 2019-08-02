@@ -75,10 +75,13 @@ def emolex_to_dict():
 # Main Function
 if __name__ == '__main__':
 
+    # Path for files
+    path = 'pickles/'
+
     dir_constructor()
     unzipper()
     print('EmoLex unzipped')
-    print('Creating EmoLex dictionary')
+    print('Create EmoLex dictionary')
     emolex_dict = emolex_to_dict()
     # Save the pickle!
     picklelist(emolex_dict, 'dictlist')
