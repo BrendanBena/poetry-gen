@@ -2,6 +2,8 @@
 Repo to host a creative poetry generation project implementation for the Summer 2019 UCCS REU in Machine Learning for Natural Language Processing.
 
 ## Data Collection & Preparation
+The following section outlines the necessary steps to complete the initial data collection and pre-processing of our project.
+
   #### Collection of dream data
   To collect the dream data from _DreamBank.net_ that we used in our project run the .py files from the CL as follows:
     
@@ -40,12 +42,29 @@ Repo to host a creative poetry generation project implementation for the Summer 
    Place the zipped json folder in the project directory after downloading from here:
    http://static.decontextualize.com/gutenberg-poetry-v001.ndjson.gz
    
-   After downloading the data run the following .py file to create a .pkl list of the books:
+   After downloading the data run the following .py file to create a .pkl list of the book's string and ID tuples:
    ```
    python3 gutentext_to_books.py
    ```
   
   #### Poem Emotion Scoring
-  The following script contains a 'scored_text' class that ranks a text based on the number of EmoLex words found in it. 
+  The following scripts contains a 'scored_text' class that ranks a text based on the number of EmoLex words found in it. 
+  
+  Run the following command to score a string and ID tuple list of books:
+  ```
+  python3 books_scorer.py
+  ```
+  This will create a book dictionary list .pkl in the form:
+  
+  \[{'s':'book_string', 'id': int, emotion:('emolex_emotion','numberofemotionwords')},...]
+  
+  The next command will use the book dictionary to write to seperate .txt files based on emotion categories:
+  
+  ```
+  python3 books_to_text.py
+  ```
+  
   
   Thats it! You know should have all data necessary to rerun our experiment.
+
+## Re-Training
